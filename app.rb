@@ -32,14 +32,19 @@ get '/' do
 	erb :home
 end
 
+#also home page
+get '/home' do
+  erb :home
+end
+
 #login page
 get '/login' do
 	erb :login
 end
 
 #about_us page
-get '/about_us' do
-	erb :about_us
+get '/about' do
+	erb :about
 end
 
 #services page
@@ -52,6 +57,10 @@ get '/contact_us' do
 	erb :contact_us
 end
 
+#portfolio page
+get '/portfolio' do
+  erb :portfolio
+end
 #test sending email 
 get '/sendmail' do
   mailit('anyuser@someprovider.com', 'anyuser@someprovider.com', 'Subject_goes_here', 'Comment_goes_here')
