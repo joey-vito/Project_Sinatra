@@ -1,4 +1,3 @@
-<script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -14,7 +13,7 @@ $(document).ready(function(){
     $('html, body').animate({
       scrollTop: $(hash).offset().top
     }, 900, function(){
-     
+
       // Add hash (#) to URL when done scrolling (default click behavior)
       window.location.hash = hash;
     });
@@ -32,4 +31,3 @@ $(document).ready(function(){
     });
   });
 })
-</script>
